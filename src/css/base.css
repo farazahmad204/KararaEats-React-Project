@@ -1,0 +1,255 @@
+body {
+    background-image: 'url(/images/background_image.webp)';
+}
+
+
+.custom-font {
+    font-family: Sans-serif, Serif;
+    /* Change to your desired font */
+    font-size: 0.8em;
+}
+
+.custom-font-brand {
+    font-family: Sans-serif, Serif;
+    /* Change to your desired font */
+    font-size: 1.4em;
+}
+
+.MainHeadline {
+    color: rgb(255, 255, 255);
+    background-color: hsl(22, 92%, 45%);
+    padding: 1px;
+}
+
+.fancy-btn {
+
+    background: linear-gradient(to right, black, grey);
+    color: white;
+    border: white;
+    font-size: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: 'url(/images/button_back.jpg)';
+}
+
+
+
+
+.fancy-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Custom link styles for Register and Forgot Password */
+.link-style {
+    color: #ff0015;
+    /* Default link color */
+}
+
+.link-style:hover {
+    text-decoration: underline;
+    color: #0056b3;
+    /* Darker color on hover */
+}
+
+
+/* Add spacing between fields */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    width: 100%;
+    /* Make sure input fields take full width */
+}
+
+/* Styling for username and password text */
+.form-group label {
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* Style for error list */
+ul.errorlist.nonfield {
+    background-color: white;
+    /* White background for the error list */
+    color: red;
+    /* Red text color for visibility */
+    padding: 10px;
+    /* Add some padding for spacing */
+    border: 1px solid #ddd;
+    /* Light border around the error box */
+    border-radius: 5px;
+    /* Rounded corners */
+    list-style-type: none;
+    /* Remove default list styling */
+    margin: 0;
+    /* Remove default margin */
+}
+
+/* Optional: Style the individual error items */
+ul.errorlist.nonfield li {
+    margin-bottom: 5px;
+    /* Space between each error message */
+}
+
+
+.navbar .nav-link {
+
+    margin-left: 30px;
+    position: relative;
+    color: rgb(240, 231, 231);
+    color: #ffffff !important;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+
+}
+
+.navbar-brand,
+.navbar .nav-link:hover {
+    color: #f0426d !important;
+}
+
+.navbar .nav-link::before {
+
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(243, 113, 113);
+    box-shadow: 8px 8px 8px #f9f06d;
+    transition: all .6s ease;
+    transform-origin: center;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%23f0426d' stroke-width='2' d='M 5 7 L 25 7'/%3e%3cpath stroke='%23f0426d' stroke-width='2' d='M 5 14 L 25 14'/%3e%3cpath stroke='%23f0426d' stroke-width='2' d='M 5 21 L 25 21'/%3e%3c/svg%3e");
+
+}
+
+
+
+.login-container {
+    background-color: #ddd;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 500%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .login-heading {
+    color: black;
+    font-size: 1.8rem;
+    text-align: center; /* Center the heading */
+    width: 100%; /* Make sure the heading is inside a block element */
+  }
+  /* Style for the section message */
+  .contact-message {
+    color: black;
+    font-size: 1.0rem;
+    text-align: center; /* Center the heading */
+    width: 100%; /* Make sure the heading is inside a block element */
+  }
+
+  hr {
+    width: 50%; /* Control the width of the hr element */
+    margin: 10px auto; /* Center the hr */
+  }
+  
+  .form-group {
+    width: 85%; /* Set the width of the form groups */
+    margin-bottom: 15px; /* Space between form fields */
+    margin-left: 25px; /* Space between form fields */
+    justify-content: flex-start; /* Align children (form groups) at the start */
+    align-items: flex-start; /* Align items (form controls) to the start */
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-control {
+    width: 100%; /* Ensure form controls take up full width */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  
+  .form-label {
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+  }
+   
+  .text-danger {
+    color: red;
+    font-size: 0.875rem;
+  }
+ 
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .fancy-btn {
+    font-size: 16px;
+  }
+  
+  .link-style {
+    color: #1a1917;
+    text-decoration: none;
+  }
+  
+  .link-style:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile View */
+  @media (max-width: 767px) {
+    .login-container {
+      width: 90%;
+      height: auto;
+    }
+  
+    .login-heading {
+      font-size: 1.25rem;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }
+  
+  /* Larger Screen */
+  @media (min-width: 768px) {
+    .login-container {
+      width: 30%; /* Adjust the width on larger screens */
+      height: auto;
+    }
+  
+    .login-heading {
+      font-size: 1.75rem;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }
